@@ -1,0 +1,300 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: navy;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/*#look-around{
+  color: #487CDB;
+}
+
+#look-around:hover {
+  color: #FF3F74;
+}*/
+
+/*==============
+HEADER
+==============*/
+
+header {
+  /*position: fixed;*/
+  top: 0px;
+  left: 0;
+  width: 100%;
+}
+
+.name {
+  text-transform: uppercase;
+  color: #FF3F74;
+  font-size: 120px;
+  font-weight: 800;
+  line-height: 80%;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.name:hover {
+  color: #FFE846;
+}
+
+.name:active {
+  transform: translateY(3px);
+}
+
+
+@media only screen and (max-width: 1050px) {
+  .name {
+    font-size: 72px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .name {
+    text-align: left;
+  }
+}
+
+/*==============
+navigation
+==============*/
+
+.nav {
+  text-decoration: none;
+  color: #487CDB;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 32px;
+  font-weight: 600;
+  max-width: 1050px;
+  text-align: center;
+  margin: auto;
+  right: 0;
+  left: 0;
+}
+
+@media only screen and (max-width: 1050px) {
+  .nav {
+    font-size: 26px;
+    padding: 0 2rem 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .nav {
+    font-size: 24px;
+    padding: 0 1rem 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .nav {
+    padding: 0 1rem 0 1rem;
+    font-size: 16px;
+  }
+}
+
+.nav-item:hover {
+  text-decoration: line-through #FF3F74;
+}
+
+.nav-item:active {
+  transform: translateY(3px);
+}
+
+.line {
+  text-decoration: line-through #FF3F74;
+}
+
+.email:hover {
+  text-decoration: none;
+  color: #FFE846;
+}
+
+/*==============
+WELCOME
+==============*/
+
+.hero{
+  /*width: 50vw;*/
+  height: 30vh;
+  /*margin-left: -10rem;*/
+  max-width: 400px;
+}
+
+.container {
+  margin-top: 4rem;
+  /*background-color: #487CDB;*/
+  width: 75vw;
+  height: 25vh;
+}
+
+.flex-center-me {
+  display: flex;
+  align-items: center;
+}
+
+.welcome-container {
+  padding: 2rem;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.subheading{
+  /*padding-left: 8%;
+  padding-right: 10%;*/
+  font-weight: 600;
+  line-height: 100%;
+  font-size: 4rem;
+  max-width: 1020px;
+  padding: 0;
+  margin: auto;
+}
+
+@media only screen and (max-width: 660px) {
+  .subheading {
+
+  }
+}
+
+/*==============
+DESIGN PAGE
+==============*/
+
+
+.project-container{
+  padding: 2rem 0 2rem 0;
+}
+
+.project-info-container {
+  padding-left: 5%;
+  padding-right: 4%;
+}
+
+.title {
+  font-size: 2.5rem;
+  line-height: 2.7rem;
+  font-weight: 600;
+  max-width: 50vw;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+
+.project-container:hover{
+  color: #FF3F74;
+}
+
+.project-container:active{
+  transform: translateY(3px)
+}
+
+@media only screen and (max-width: 660px) {
+  .project-container {
+    display: block;
+    margin: auto;
+    right: 50;
+    left: 50;
+    padding: 0 .5rem 0 .5rem;
+  }
+  .title, .date {
+    max-width: none;
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+}
+
+.date {
+  padding-top: .5rem;
+  margin: 0;
+  font-style: italic;
+}
+
+.float-left {
+  float: left;
+  padding-right: 8%;
+  padding-left: 10%;
+}
+
+.float-right{
+  float: right;
+  padding-right: 10%;
+  padding-left: 8%;
+}
+
+
+
+/*==============
+ABOUT PAGE
+==============*/
+
+.info-container {
+  /*background-color: #487CDB;*/
+  max-width: 1020px;
+  padding: 2rem;
+  /*padding-left: 4rem;*/
+  margin: auto;
+  right: 0;
+  left: 0;
+}
+
+.info {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 120%;
+  max-width: 50vw;
+}
+
+.project-content {
+  /*padding-bottom: 1rem;*/
+  max-width: 50vw;
+  line-height: 135%;
+}
+
+@media only screen and (max-width: 660px) {
+  .project-content, .info {
+    max-width: none;
+  }
+}
+
+.portrait {
+  width: 30vw;
+  padding-top: 2rem;
+  max-width: 400px;
+}
+
+/*==============
+PROJECT page
+==============*/
+
+.images-container{
+  max-width: 1020px;
+  margin: auto;
+  right: 50%;
+  left: 50%;
+  padding: 0 2rem 0 2rem;
+
+}
+
+.main-img, .img-item {
+  padding-top: 1rem;
+}
+
+.img-item {
+  width: 100%;
+  max-width: 30vw;
+  margin-left: 1rem;
+}
